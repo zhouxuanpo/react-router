@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import { Link } from 'react-router';
+
 
 class App extends React.Component {
   getChildContext() {
@@ -8,7 +10,8 @@ class App extends React.Component {
   render () {
     return(
       <div>
-
+          app
+          {this.props.children}
       </div>
     )
   }

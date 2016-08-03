@@ -1,9 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
+import {Router,hashHistory} from 'react-router';
 
-import App from './App.js';
+import routes from './routes.js';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
-
-render(<App />,document.getElementById('root'));
+render(<Router routes={routes} history={hashHistory} />
+  ,document.getElementById('root'));
